@@ -1,0 +1,561 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Send money to anyone, anywhere.">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flathub</title>
+	
+
+	<!-- STYLESHEETS-->
+	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
+
+	<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	
+
+	<!-- WEBFONT -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+
+	<!-- ICON -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- sweet alert -->
+	
+</head>
+<body>
+
+	<header>
+		<nav class="navbar navbar-default h-60 mh-100p m-b-0 bg-white border-bottom twidth-824" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand m-l-32 m-t-0 h-36 f-40 c-bck" href="index.html"><p class="flat">Flat<span class="c-grey">Hub</span></p></a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse p-t-10">
+					<ul class="nav navbar-nav navbar-right f-1">
+						<li><a href="our_apartment2.html"  class="c-brown">Our Apartment</a></li>
+						<li><a href="list_apartment.html">Locations</a></li>
+
+						<li><a class="" data-toggle="modal" href='#modal-signup'>Sign Up</a>
+						<div class="modal fade" id="modal-signup">
+							<div class="modal-dialog">
+								<div class="modal-content m-auto width-361 mwidth-100">
+									<div class="modal-header mp-b-5 no-bd">
+					        			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					        		<!-- <h4 class="modal-title">Modal title</h4> -->
+					      			</div>
+					      			<div class="modal-body">
+										<div class="">
+											<p class="text-center f-18 p-10">Sign up to FlatHub and find a great apartment</p>
+				 
+											<button type="" class="h-48 bg-blue f-16 w-500 no-bd c-white bd-4 p-l-10 mwidth-100 width-300 m-l-13 mm-l-0"><i class="fa fa-facebook"></i> Sign up with Facebook</button>
+
+
+											<div class="login-or">
+												<hr class="hr-or">
+												<span class="span-or">or</span>
+											</div>
+
+							        		<div class="">
+						    					<form action="" method="post" onsubmit="return(validate())" role="form" name="myForm" ">
+						    						
+						    						<span id="errorFullname" class="text-center"></span>
+						    						<input class="form-control h-48  width-300 m-l-13 mwidth-100 mm-l-0" type="text" name="fullname" id ="fullname" value="" placeholder="* Full name" >
+						    						<br>
+								    				
+
+								    				<span id="errorEmail" class="text-center"></span>
+							    					<input class="form-control h-48  width-300 m-l-13 mwidth-100 mm-l-0" type="email" placeholder="* Email" name="email" id = "email">   
+				                        			<br>
+
+
+				                        			<span id="errorPassword" class="text-center"></span>
+								    				<input name="password" type="password" class="form-control inputpass  h-48  width-300 m-l-13 mwidth-100 mm-l-0" placeholder="* Password" id="password"><br>
+
+				                    				<input type="password" class="form-control inputpass h-48  width-300 m-l-13 mwidth-100 mm-l-0"  placeholder="* Confirm Password" name="confirm_password" id="pass2" >
+				                        			<br>
+
+				                        			<input class="h-48 bgc f-18 w-500 no-bd c-white bd-4 mwidth-100 width-300 m-l-13 mm-l-0" type="submit" name="submit" id="submit" value="Sign up" >
+
+								    			</form>
+							    				
+							    				<p type="" class="f-12 text-center" >Already have an account?<a href=""><span class="c-red" data-toggle="modal" data-dismiss="modal" href='#modal-login'> Log in here</span></a></p>
+						    				</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<li><a class="" data-toggle="modal" href='#modal-login'>Log In</a></li>
+						<div class="modal fade" id="modal-login">
+							<div class="modal-dialog">
+								<div class="modal-content m-auto width-361 mwidth-100">
+									<div class="modal-header mp-b-5 no-bd ">
+					        		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					        		<!-- <h4 class="modal-title">Modal title</h4> -->
+					      			</div>
+									<div class="modal-body">
+									<div class="">
+										<p class="text-center f-18 p-10 mp-0 mf-12">Sign up to FlatHub and find a great apartment</p>
+			 							
+			 							<button type="" class="h-48 bg-blue f-16 w-500 no-bd c-white bd-4 p-l-10 mwidth-100 width-300 m-l-13 mm-l-0 mh-35 mf-12"><i class="fa fa-facebook"></i> Sign up with Facebook</button>
+
+										<div class="login-or">
+											<hr class="hr-or">
+											<span class="span-or">or</span>
+										</div>
+
+						        		<div class="">
+					    					<form action="" method="post" id="fileForm" role="form" name="loginform">
+					    						
+												<span id="loginEmail" class="text-center"></span>
+												<input class="form-control h-48  mh-35 width-300 m-l-13 mwidth-100 mm-l-0" type="email" placeholder="* Email" name="email" id = "email" >   
+			                        			<br>
+												
+												<span id="loginPassword" class="text-center"></span>
+							    				<input name="password" type="password" class="form-control inputpass  h-48  mh-35 width-300 m-l-13 mwidth-100 mm-l-0" placeholder="* Password" ><br>
+
+							    				<input class="h-48 bgc mh-35 f-18 w-500 no-bd c-white bd-4 mwidth-100 width-300 m-l-13 mm-l-0" type="submit" name="login_submit" value="Log In" id="login_submit">
+
+								    			</form>
+								    			<p type="" class="f-12 text-center" >Don't have an account?<a href=""><span class="c-red" data-toggle="modal" data-dismiss="modal" href='#modal-signup'> Sign Up here</span></a></p>
+							    				
+						    				</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+
+	<section>
+		<ol class="breadcrumb bg-trans">
+		  <li class="bgyco"><a href="#">Our Homes</a></li>
+		  <li class="bgyco"><a href="#">Yaba</a></li>
+		  <li class="active c-brown">Montgomery Street</li>
+		</ol>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h3 class="">2 bedroom apartment Yaba, Lagos</h3>
+					<h5 class="">42 Montgomery Street, Yaba, Lagos, Nigeria</h5>
+
+					<div id="myCarousel" class="carousel slide h-420 mh-100p" data-ride="carousel">
+					    <!-- Indicators -->
+					    <!-- <ol class="carousel-indicators">
+					      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					      <li data-target="#myCarousel" data-slide-to="1"></li>
+					      <li data-target="#myCarousel" data-slide-to="2"></li>
+					    </ol> -->
+
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner"  role="listbox">
+					      <div class="item active">
+					        <img src="assets/img/Heres.jpg" alt="" style="width:100%;" class="h-420 mh-100p img-responsive">
+					      </div>
+
+					      <div class="item">
+					        <img src="assets/img/apartments.jpg" alt="" style="width:100%;" class="h-420 mh-100p img-responsive">
+					      </div>
+					    
+					      <div class="item">
+					        <img src="assets/img/inside.jpg" style="width:100%;" class="h-420 mh-100p img-responsive">
+					      </div>
+
+					      <div class="item">
+					        <img src="assets/img/Modern.jpg" style="width:100%;" class="h-420 mh-100p img-responsive">
+					      </div>
+					    </div>
+
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					      <span class="glyphicon glyphicon-chevron-left"></span>
+					      <span class="sr-only">Previous</span>
+					    </a>
+					    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+					      <span class="glyphicon glyphicon-chevron-right"></span>
+					      <span class="sr-only">Next</span>
+					    </a>
+
+						<!-- <div class="b-0 r-0 bgcy pos-abs bg-brown c-white width-168 h-48 mh-35">
+							<p class="f-16 p-l-14 m-b-0 p-t-10">&#8358;60,000 per Month</p>
+						</div> -->
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<h3 class="p-t-24">&#8358;60,000 per Month</h3>
+					<div class="bd-brandf p-40 ">
+						<form>
+							<div class="form-group pos-rel">
+								<label>Move in on</label>
+								<input type="text" name="" class="form-control pos-abs" onfocus="(this.type='date')"  required="">
+								<span class="pos-abs calendar"><img src="assets/icons/calendar_big.png" width="20px" height="20px"></span>
+							</div><br>
+
+							<div class="form-group">
+								<label>Duration</label>
+								<select name="" id="input" class="form-control" required="required">
+									<option value="1month">1 Month</option>
+									<option value="2month">2 Month</option>
+									<option value="3month">3 Month</option>
+								</select>
+							</div>
+
+							<button type="button" class="bg-brown c-white bd-brandb h-35 width-100p" data-toggle="modal" href='#modal-login'>Book Now
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+					<br>
+			<div class="row">
+				<div class="col-md-8">
+					<h1 class="">About</h1>
+					<p class="">This 2 bedroom apartment is located in Sabo, Yaba. The apartment is on Montgomery street which is just of  Herbert Macaluay road. The apartment is on the third floor in a modern building called Adepate House. There is a lift for your convenience and and a roof top balcony accessbile to all tenants of the building. </p>
+
+					<br>
+					<hr>
+					<br>
+					<h1 class="">The Space</h1>
+					<div class="row">
+						<div class="col-md-4 col-xs-4">
+							<p class="">Bedrooms:<span class="w-900"> 2</span> </p>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<p class="">Bed:<span class="w-900"> 2</span> </p>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<p class="">Minimum Let period:<span class="w-900"> 1 Month</span> </p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4 col-xs-4">
+							<p class="">Bedrooms:<span class="w-900"> 2</span> </p>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<p class="">Floor:<span class="w-900"> 3 floor</span> </p>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<p class="">Sofas:<span class="w-900"> 2</span> </p>
+						</div>
+					</div>
+
+					<br>
+					<hr>
+					<br>
+
+					<h1 class="">Amenities</h1>
+					<div class="row">
+						<div class="col-md-4 col-xs-4">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="assets/icons/air-conditioner.png" class="width-24">
+								</div>
+								<div class="col-md-10">
+									<p>Air-conditioner</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="assets/icons/car.png" class="width-24">
+								</div>
+								<div class="col-md-10">
+									<p>Packing</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="assets/icons/wheelchair.png" class="width-24">
+								</div>
+								<div class="col-md-10">
+									<p>Wheelchair access</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<br>
+
+					<div class="row">
+						<div class="col-md-4 col-xs-4">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="assets/icons/oven.png" class="width-24">
+								</div>
+								<div class="col-md-10">
+									<p>Cooker</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="assets/icons/power-cord.png" class="width-24">
+								</div>
+								<div class="col-md-10">
+									<p>Stable Power</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="assets/icons/power-cord.png" class="width-24">
+								</div>
+								<div class="col-md-10">
+									<p>Wifi</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<br>
+
+					<div class="row">
+						<div class="col-md-4 col-xs-4">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="assets/icons/sofa.png" class="width-24">
+								</div>
+								<div class="col-md-10">
+									<p>Funiture</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="assets/icons/washing-machine.png" class="width-24">
+								</div>
+								<div class="col-md-10">
+									<p>Washing maching</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="assets/icons/locked.png" class="width-24">
+								</div>
+								<div class="col-md-10">
+									<p>24/7 security</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<br>
+					<hr>
+					<br>
+
+					<h1 class="">House rules</h1>
+					<div class="row">
+						<div class="col-md-2 col-xs-6">
+							<p class="">No pets</p>
+						</div>
+						<div class="col-md-10 col-xs-6">
+							<p class="">No Smoking</p>
+						</div>
+					</div>
+
+					<br>
+					<hr>
+					<br>
+
+					<h1 class="">House rules</h1>
+					<div class="row">
+						<div class="col-md-2 col-xs-6">
+							<p class="">Price:</p>
+						</div>
+						<div class="col-md-10 col-xs-6">
+							<p class="">Deposit:</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-2 col-xs-6">
+							<p class="">&#8358;60.000</p>
+						</div>
+						<div class="col-md-10 col-xs-6">
+							<p class="">&#8358;200.000</p>
+						</div>
+					</div>
+
+					<br>
+					<hr>
+					<br>
+
+					<h1 class="">Reviews</h1>
+					<br>
+					<div class="row">
+						<div class="col-md-10">
+							<p class="bgyco">Tolu Modupe - 30/09/2015</p>
+						</div>
+						<div class="col-md-2">
+							<p class="">
+								<span class="c-brown"><i class="fa fa-star"></i></span> 
+								<span class="c-brown"><i class="fa fa-star"></i></span> 
+								<span class="c-brown"><i class="fa fa-star"></i></span> 
+								<span class="c-brown"><i class="fa fa-star"></i></span>
+								<span class=""><i class="fa fa-star"></i></span>
+							</p>
+						</div>
+					</div>
+					<p class="">We decided to try out Adas bakery for a cocktail we had to celebrate the launch of our new building. My partners and I had never tasted the pastries at Adas bakery but were pleasantly suprised by the pastries and the service. Ada personally kept in contact with us to ensure that everything was going well at the event and that we were well taken care of. I would recommend Adas bakery to anyone looking for great tasting cakes and pastries as well as quality service. </p>
+
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-6">
+							<hr>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+
+					<br>
+					<div class="row">
+						<div class="col-md-10">
+							<p class="bgyco">Tolu Modupe - 30/09/2015</p>
+						</div>
+						<div class="col-md-2">
+							<p class="">
+								<span class="c-brown"><i class="fa fa-star"></i></span> 
+								<span class="c-brown"><i class="fa fa-star"></i></span> 
+								<span class="c-brown"><i class="fa fa-star"></i></span> 
+								<span class="c-brown"><i class="fa fa-star"></i></span>
+								<span class=""><i class="fa fa-star"></i></span>
+							</p>
+						</div>
+					</div>
+					<p class="">We decided to try out Adas bakery for a cocktail we had to celebrate the launch of our new building. My partners and I had never tasted the pastries at Adas bakery but were pleasantly suprised by the pastries and the service. Ada personally kept in contact with us to ensure that everything was going well at the event and that we were well taken care of. I would recommend Adas bakery to anyone looking for great tasting cakes and pastries as well as quality service. </p>
+
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-6">
+							<hr>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+
+					<br>
+					<div class="row">
+						<div class="col-md-10">
+							<p class="bgyco">Tolu Modupe - 30/09/2015</p>
+						</div>
+						<div class="col-md-2">
+							<p class="">
+								<span class="c-brown"><i class="fa fa-star"></i></span> 
+								<span class="c-brown"><i class="fa fa-star"></i></span> 
+								<span class="c-brown"><i class="fa fa-star"></i></span> 
+								<span class="c-brown"><i class="fa fa-star"></i></span>
+								<span class=""><i class="fa fa-star"></i></span>
+							</p>
+						</div>
+					</div>
+					<p class="">We decided to try out Adas bakery for a cocktail we had to celebrate the launch of our new building. My partners and I had never tasted the pastries at Adas bakery but were pleasantly suprised by the pastries and the service. Ada personally kept in contact with us to ensure that everything was going well at the event and that we were well taken care of. I would recommend Adas bakery to anyone looking for great tasting cakes and pastries as well as quality service. </p>
+
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-6">
+							<hr>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+					<br>
+					<p class="c-brown f-20"><a href="">Show more</a></p>
+				</div>
+
+				<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+	</section>
+		
+
+	<footer class="nb-footer">
+		<div class="container">
+			<div class="row m-t-62">
+				<div class="col-md-5 col-sm-12">
+					<p class="c-white">Get exclusive update about our new apartment</p>
+					<form class="">
+						<div class="row">
+							<div class="col-md-7">
+								<div class="form-group">
+									<input type="input" name="" id="input" class="form-control width-265 mwidth-100" value="" title="" placeholder="email">
+								</div>
+							</div>
+							<div class="col-md-5">
+								<button type="submit" class="h-35 bgc f-16 w-500 no-bd c-white bd-4 mwidth-100 width-130 text-center" name="">Subscribe</button>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				
+				<div class="col-md-7 col-sm-12 ">
+					<div class="row footer-info-single">
+						<div class="col-md-4">
+							<a href="about.html"><p class="">About Us</p></a>
+
+							<a href="contact.html"><p class="">Contact us</p></a>
+
+							<a href="faqs.html"><p class="">Faq's </p></a>
+						</div>
+
+						<div class="col-md-4">
+							<p>
+								<a href="payment.html">Payment structure</a>
+							</p>
+							<p class=""><a href=""><span> Terms of Use</span></a>
+							</p>
+						</div>
+
+						<div class="col-md-4">
+							<p class="">Follow us on 
+								<span class=""><a href="http://fb.com/FlatHubNG" target="_blank"><i class="p-l-10 c-white fa fa-facebook-square fa-lg"></i> <a href=""><i class="c-white p-l-10 fa fa-twitter fa-lg"></i></a> <a href=""><i class="c-white p-l-10 fa fa-instagram fa-lg"></i></a></span>
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p class="text-center m-t-112" style="color: #d1c8c8;">&copy;<a href="">FlatHub.ng</a></p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="libraries/bootstrap/js/jquery.min.js"></script>
+	<script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="libraries/bootstrap/js/book_viewing.js"></script>
+	<script type="text/javascript" src="assets/js/registrationformvalidation.js"></script>
+	<script type="text/javascript" src="assets/js/signup.js"></script>
+	
+
+</body>
+</html>

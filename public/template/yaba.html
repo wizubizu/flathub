@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Send money to anyone, anywhere.">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flathub</title>
+	
+
+	<!-- STYLESHEETS-->
+	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
+
+	<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+
+
+	<!-- WEBFONT -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+
+	<!-- ICON -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default h-60 mh-100p m-b-0 bg-white border-bottom twidth-824" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand m-l-32 m-t-0 h-36 f-40 c-bck" href="index.html"><p class="flat">Flat<span class="c-grey">Hub</span></p></a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse p-t-10">
+					<ul class="nav navbar-nav navbar-right f-1">
+						<li><a href="our_apartment2.html" class="c-brown">Our apartments</a></li>
+						<li><a href="list_apartment.html">List apartment</a></li>
+
+						<li><a class="" data-toggle="modal" href='#modal-signup'>Sign Up</a>
+						<div class="modal fade" id="modal-signup">
+							<div class="modal-dialog">
+								<div class="modal-content m-auto width-361 mwidth-100">
+									<div class="modal-header mp-b-5 no-bd">
+					        			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					        		<!-- <h4 class="modal-title">Modal title</h4> -->
+					      			</div>
+					      			<div class="modal-body">
+										<div class="">
+											<p class="text-center f-18 p-10">Sign up to FlatHub and find a great apartment</p>
+				 
+											<button type="" class="h-48 bg-blue f-16 w-500 no-bd c-white bd-4 p-l-10 mwidth-100 width-300 m-l-13 mm-l-0"><i class="fa fa-facebook"></i> Sign up with Facebook</button>
+
+
+											<div class="login-or">
+												<hr class="hr-or">
+												<span class="span-or">or</span>
+											</div>
+
+							        		<div class="">
+						    					<form action="" method="post" onsubmit="return(validate())" role="form" name="myForm" ">
+						    						
+						    						<span id="errorFullname" class="text-center"></span>
+						    						<input class="form-control h-48  width-300 m-l-13 mwidth-100 mm-l-0" type="text" name="fullname" id ="fullname" value="" placeholder="* Full name" >
+						    						<br>
+								    				
+
+								    				<span id="errorEmail" class="text-center"></span>
+							    					<input class="form-control h-48  width-300 m-l-13 mwidth-100 mm-l-0" type="email" placeholder="* Email" name="email" id = "email">   
+				                        			<br>
+
+
+				                        			<span id="errorPassword" class="text-center"></span>
+								    				<input name="password" type="password" class="form-control inputpass  h-48  width-300 m-l-13 mwidth-100 mm-l-0" placeholder="* Password" id="password"><br>
+
+				                    				<input type="password" class="form-control inputpass h-48  width-300 m-l-13 mwidth-100 mm-l-0"  placeholder="* Confirm Password" name="confirm_password" id="pass2" >
+				                        			<br>
+
+				                        			<input class="h-48 bgc f-18 w-500 no-bd c-white bd-4 mwidth-100 width-300 m-l-13 mm-l-0" type="submit" name="submit" id="submit" value="Sign up" >
+
+								    			</form>
+							    				
+							    				<p type="" class="f-12 text-center" >Already have an account?<a href=""><span class="c-red" data-toggle="modal" data-dismiss="modal" href='#modal-login'> Log in here</span></a></p>
+						    				</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<li><a class="" data-toggle="modal" href='#modal-login'>Log In</a></li>
+						<div class="modal fade" id="modal-login">
+							<div class="modal-dialog">
+								<div class="modal-content m-auto width-361 mwidth-100">
+									<div class="modal-header mp-b-5 no-bd ">
+					        		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					        		<!-- <h4 class="modal-title">Modal title</h4> -->
+					      			</div>
+									<div class="modal-body">
+									<div class="">
+										<p class="text-center f-18 p-10 mp-0 mf-12">Sign up to FlatHub and find a great apartment</p>
+			 							
+			 							<button type="" class="h-48 bg-blue f-16 w-500 no-bd c-white bd-4 p-l-10 mwidth-100 width-300 m-l-13 mm-l-0 mh-35 mf-12"><i class="fa fa-facebook"></i> Sign up with Facebook</button>
+
+										<div class="login-or">
+											<hr class="hr-or">
+											<span class="span-or">or</span>
+										</div>
+
+						        		<div class="">
+					    					<form action="" method="post" id="fileForm" role="form" name="loginform">
+					    						
+												<span id="loginEmail" class="text-center"></span>
+												<input class="form-control h-48  mh-35 width-300 m-l-13 mwidth-100 mm-l-0" type="email" placeholder="* Email" name="email" id = "email" >   
+			                        			<br>
+												
+												<span id="loginPassword" class="text-center"></span>
+							    				<input name="password" type="password" class="form-control inputpass  h-48  mh-35 width-300 m-l-13 mwidth-100 mm-l-0" placeholder="* Password" ><br>
+
+							    				<input class="h-48 bgc mh-35 f-18 w-500 no-bd c-white bd-4 mwidth-100 width-300 m-l-13 mm-l-0" type="submit" name="login_submit" value="Log In" id="login_submit">
+
+								    			</form>
+								    			<p type="" class="f-12 text-center" >Don't have an account?<a href=""><span class="c-red" data-toggle="modal" data-dismiss="modal" href='#modal-signup'> Sign Up here</span></a></p>
+							    				
+						    				</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+
+	<section>
+		<ol class="breadcrumb bg-trans">
+		  <li class="bgyco"><a href="">Our homes</a></li>
+		  <li class="active c-brown">Yaba</li>
+		</ol>
+		<div class="container">
+			<h1 class="text-center ">Yaba</h1>
+			<div class="row m-t-30">
+				<div class="col-md-4">
+					<a href="#" class="thumbnail">
+						<img src="assets/img/Modern.jpg" class="img-responsive bd-2">
+						<h3 class="text-center f-18">Montgomery Street, Yaba</h3>
+					</a>
+				</div>
+				<div class="col-md-4 mm-t-20">
+					<a href="#" class="thumbnail">
+						<img src="assets/img/apartments.jpg" class="img-responsive bd-2 ">
+						<h3 class="text-center f-18">Bola Street, Yaba</h3>
+					</a>
+				</div>
+				<div class="col-md-4 mm-t-20">
+					<a href="#" class="thumbnail">
+						<img src="assets/img/images.jpeg" class="img-responsive bd-2">
+						<h3 class="text-center f-18">Kayode Street, Yaba</h3>
+					</a>
+				</div>
+			</div>
+
+			<div class="row m-t-30">
+				<div class="col-md-4 mm-t-20">
+					<a href="#" class="thumbnail">
+						<img src="assets/img/inside.jpg" class="img-responsive bd-2 ">
+						<h3 class="text-center f-18">Adepate Close, Yaba</h3>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="thumbnail">
+						<img src="assets/img/Heres.jpg" class="img-responsive bd-2">
+						<h3 class="text-center f-18">Ladipo Street, Yaba</h3>
+					</a>
+				</div>
+				<div class="col-md-4 mm-t-20">
+					<a href="#" class="thumbnail">
+						<img src="assets/img/good.jpg" class="img-responsive bd-2">
+						<h3 class="text-center f-18">Kolapo Cresent, Yaba</h3>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="nb-footer">
+		<div class="container">
+			<div class="row m-t-62">
+				<div class="col-md-5 col-sm-12">
+					<p class="c-white">Get exclusive update about our new apartment</p>
+					<form class="">
+						<div class="row">
+							<div class="col-md-7">
+								<div class="form-group">
+									<input type="input" name="" id="input" class="form-control width-265 mwidth-100" value="" title="" placeholder="email">
+								</div>
+							</div>
+							<div class="col-md-5">
+								<button type="submit" class="h-35 bgc f-16 w-500 no-bd c-white bd-4 mwidth-100 width-130 text-center" name="">Subscribe</button>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				
+				<div class="col-md-7 col-sm-12 ">
+					<div class="row footer-info-single">
+						<div class="col-md-4">
+							<a href="about.html"><p class="">About Us</p></a>
+
+							<a href="contact.html"><p class="">Contact us</p></a>
+
+							<a href="faqs.html"><p class="">Faq's </p></a>
+						</div>
+
+						<div class="col-md-4">
+							<p>
+								<a href="payment.html">Payment structure</a>
+							</p>
+							<p class=""><a href=""><span> Terms of Use</span></a>
+							</p>
+						</div>
+
+						<div class="col-md-4">
+							<p class="">Follow us on 
+								<span class=""><a href="http://fb.com/FlatHubNG" target="_blank"><i class="p-l-10 c-white fa fa-facebook-square fa-lg"></i> <a href=""><i class="c-white p-l-10 fa fa-twitter fa-lg"></i></a> <a href=""><i class="c-white p-l-10 fa fa-instagram fa-lg"></i></a></span>
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p class="text-center m-t-112" style="color: #d1c8c8;">&copy;<a href="">FlatHub.ng</a></p>
+		</div>
+	</footer>
+	
+	
+	<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
+
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/registrationformvalidation.js"></script>
+    <script type="text/javascript" src="assets/js/signup.js"></script>
+</body>
+</html>

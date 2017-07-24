@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Send money to anyone, anywhere.">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flathub</title>
+	
+
+	<!-- STYLESHEETS-->
+	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
+
+	<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/ip_responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/checkbox.css">
+
+	<link rel="stylesheet" type="text/css" href="sweetalert-master/dist/sweetalert.css">
+		<script type="text/javascript" src="sweetalert-master/dist/sweetalert.min.js"></script>
+	<!-- WEBFONT -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+
+	<!-- ICON -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- sweet alert -->
+	
+</head>
+<body>
+
+
+	<header>
+		<nav class="navbar navbar-default h-60 mh-100p m-b-0 bg-white border-bottom twidth-824" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand m-l-32 m-t-0 h-36 f-40 c-bck" href="index.html"><p class="flat">Flat<span class="c-grey">Hub</span></p></a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse p-t-10">
+					<ul class="nav navbar-nav navbar-right f-1">
+						<li><a href="our_apartment2.html">Our homes</a></li>
+						<li><a href="list_apartment.html" class="">List apartment</a></li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle bg-trans c-brown" data-toggle="dropdown">Tobi Ademola <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li><a href="#">Sign out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+
+		<div class="navbar m-b-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<ul class="nav navbar-nav">
+							<li class="">
+								<a href="#">Viewing</a>
+							</li>
+							<li class="p-l-26 mp-l-0">
+								<a href="#">Apartments</a>
+							</li>
+
+							<li class="p-l-26 mp-l-0 active c-brown">
+								<a href="#">Settings</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<hr class="m-t-0">
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="bd-brand">
+						<p class="p-l-10 p-18 h-50">Dashboard</p>
+					</div>
+					<div class="bd-brand">
+						<p class="p-l-10 p-18 h-50 c-brown">Rent Apartments</p>
+					</div>
+					<div class="bd-brand">
+						<p class="p-l-10 p-18 h-50">List Apartments</p>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<div class="bd-brand">
+						<div class="container width-1000 m-l-36 mwidth-100 mm-l-0">
+							
+							<div class="row">
+								<div class="col-md-6">
+									<p class="f-24 w-900 m-t-20">Email notifications</p>
+								</div>
+								<div class="col-md-6">
+									<p class="c-brown m-t-20 m-l-18p mm-l-0"><a href="#">Edit</a></p>
+								</div>
+							</div>
+							<hr class="m-r-37p m-t-0 mm-r-0">
+							<div class="row">
+								<div class="col-md-3">
+									<p>I want to receive notifications of:</p>
+								</div>
+								<div class="col-md-9">
+									<div class="checkbox m-t-0">
+										<input type="checkbox" id="check1">
+										<label for="check1">
+											<span class="p-l-10"> New apartment listings </span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check2">
+										<label for="check2">
+											<span class="p-l-10"> Price reductions </span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check3">
+										<label for="check3">
+											<span class="p-l-10"> Move in and viewing reminders </span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check4">
+										<label for="check4">
+											<span class="p-l-10">When my apartment has been listed </span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<br><br>
+
+							<div class="row">
+								<div class="col-md-6">
+									<p class="f-24 w-900 m-t-20">Card details</p>
+								</div>
+							</div>
+							<hr class="m-r-37p m-t-0 mm-r-0">
+							<a href=""><p class="c-brown">Change card details</p></a>
+							
+							<br><br>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="nb-footer">
+		<div class="container">
+			<div class="row m-t-62">
+				<div class="col-md-5 col-sm-12">
+					<p class="c-white">Get exclusive update about our new apartment</p>
+					<form class="">
+						<div class="row">
+							<div class="col-md-7">
+								<div class="form-group">
+									<input type="input" name="" id="input" class="form-control width-265 mwidth-100" value="" title="" placeholder="email">
+								</div>
+							</div>
+							<div class="col-md-5">
+								<button type="submit" class="h-35 bgc f-16 w-500 no-bd c-white bd-4 mwidth-100 width-130 text-center" name="">Subscribe</button>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				
+				<div class="col-md-7 col-sm-12 ">
+					<div class="row footer-info-single">
+						<div class="col-md-4">
+							<a href="about.html"><p class="">About Us</p></a>
+
+							<a href="contact.html"><p class="">Contact us</p></a>
+
+							<a href="faqs.html"><p class="">Faq's </p></a>
+						</div>
+
+						<div class="col-md-4">
+							<p>
+								<a href="payment.html">Payment structure</a>
+							</p>
+							<p class=""><a href=""><span> Terms of Use</span></a>
+							</p>
+						</div>
+
+						<div class="col-md-4">
+							<p class="">Follow us on 
+								<span class=""><a href="http://fb.com/FlatHubNG" target="_blank"><i class="p-l-10 c-white fa fa-facebook-square fa-lg"></i> <a href=""><i class="c-white p-l-10 fa fa-twitter fa-lg"></i></a> <a href=""><i class="c-white p-l-10 fa fa-instagram fa-lg"></i></a></span>
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p class="text-center m-t-112" style="color: #d1c8c8;">&copy;<a href="">FlatHub.ng</a></p>
+		</div>
+	</footer>
+	
+
+	<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="libraries/bootstrap/js/jquery.min.js"></script>
+	<script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="libraries/bootstrap/js/book_viewing.js"></script>
+	<script type="text/javascript" src="assets/js/registrationformvalidation.js"></script>
+	<script type="text/javascript" src="assets/js/listing.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<!-- <script type="text/javascript">
+		$('ul.foot li a').on('click', function(e){
+			$(".nav.nav-pills").find('.active').removeClass('active');
+			$(".tab-content").find('.active').removeClass('active');
+			// console.log($(this).attr('href'));
+			var link = $(this).attr('href');
+			
+			
+			$(link).addClass('active');
+		})
+	</script> -->
+	
+
+</body>
+</html>
