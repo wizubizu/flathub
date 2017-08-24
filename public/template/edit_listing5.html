@@ -103,15 +103,19 @@
 			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-10 bd-brandf ">
-					<form action="add_listing3.html">
+					<form action="#">
 						<div class="row">
 							<div class="col-md-1"></div>
 							<div class="col-md-10">
-								<h3 class="">Tell us about your place</h3>
-								<div class="row">
+								<h3 class="">Guest requirements and house rules</h3>
+								<div class="row m-t-20">
 									<div class="col-md-5">
 										<div class="form-group">
-											<textarea name="" id="input" class="form-control bd-brandb c-brown" rows="3" placeholder="Tell guests about your place" required="required"></textarea>
+											<select name="" id="input" class="form-control bd-brandb c-brown" required="required">
+												<option value="">How many guest would you like?</option>
+												<option value=""></option>
+												<option value=""></option>
+											</select>
 										</div>
 									</div>
 									<div class="col-md-7"></div>	
@@ -120,17 +124,105 @@
 							<div class="col-md-1"></div>
 						</div>
 
-						<div class="row">
+						<div class="row m-t-20">
 							<div class="col-md-1"></div>
 							<div class="col-md-10">
-								<h3 class="">Name your place </h3>
 								<div class="row">
-									<div class="col-md-5">
-										<div class="form-group">
-											<input type="text" name="" placeholder="e.g 2 bedroom apartment in sabo yaba" class=" form-control" required="required">
+									<div class="col-md-8">
+										<div class="row">
+											<div class="col-md-6 col-xs-5">
+												<p>Children (2 - 12)</p>
+											</div>
+											<div class="col-md-6">
+												<div class="btn-group" id="status" data-toggle="buttons">
+										          <label class="btn btn-default btn-on-1 btn-sm active">
+										          <input type="radio" value="1" name="multifeatured_module[module_id][status]" checked="checked">Yes</label>
+										          <label class="btn btn-default btn-off-1 btn-sm ">
+										          <input type="radio" value="0" name="multifeatured_module[module_id][status]">No</label>
+										        </div>
+											</div>
+										</div>
+
+										<div class="row ">
+											<div class="col-md-6 col-xs-5">
+												<p>Children below 2 years old</p>
+											</div>
+											<div class="col-md-6">
+												<div class="btn-group" id="status" data-toggle="buttons">
+										          <label class="btn btn-default btn-on-1 btn-sm active">
+										          <input type="radio" value="1" name="multifeatured_module[module_id][status]" checked="checked">Yes</label>
+										          <label class="btn btn-default btn-off-1 btn-sm ">
+										          <input type="radio" value="0" name="multifeatured_module[module_id][status]">No</label>
+										        </div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-6 col-xs-5">
+												<p>Pets</p>
+											</div>
+											<div class="col-md-6">
+												<div class="btn-group" id="status" data-toggle="buttons">
+										          <label class="btn btn-default btn-on-1 btn-sm active">
+										          <input type="radio" value="1" name="multifeatured_module[module_id][status]" checked="checked">Yes</label>
+										          <label class="btn btn-default btn-off-1 btn-sm ">
+										          <input type="radio" value="0" name="multifeatured_module[module_id][status]">No</label>
+										        </div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-6 col-xs-5">
+												<p>Smoking</p>
+											</div>
+											<div class="col-md-6">
+												<div class="btn-group" id="status" data-toggle="buttons">
+										          <label class="btn btn-default btn-on-1 btn-sm active">
+										          <input type="radio" value="1" name="multifeatured_module[module_id][status]" checked="checked">Yes</label>
+										          <label class="btn btn-default btn-off-1 btn-sm ">
+										          <input type="radio" value="0" name="multifeatured_module[module_id][status]">No</label>
+										        </div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-6 col-xs-5">
+												<p>Events parties</p>
+											</div>
+											<div class="col-md-6">
+												<div class="btn-group" id="status" data-toggle="buttons">
+										          <label class="btn btn-default btn-on-1 btn-sm active">
+										          <input type="radio" value="1" name="multifeatured_module[module_id][status]" checked="checked">Yes</label>
+										          <label class="btn btn-default btn-off-1 btn-sm ">
+										          <input type="radio" value="0" name="multifeatured_module[module_id][status]">No</label>
+										        </div>
+											</div>
 										</div>
 									</div>
-									<div class="col-md-7"></div>	
+									<div class="col-md-4"></div>	
+								</div>
+							</div>
+							<div class="col-md-1"></div>
+						</div>
+
+						<div class="row m-t-20">
+							<div class="col-md-1"></div>
+							<div class="col-md-10">
+								<label class="">Additional rules</label>
+								<div class="row">
+									<div class="col-md-10">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" name="" placeholder="Other rules of your space" class=" form-control bd-brandb c-brown" required="required">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<button type="submit" class="bg-brown f-16 w-500 no-bd c-white bd-4 text-center width-80" name="">Add</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2"></div>	
 								</div>
 							</div>
 							<div class="col-md-1"></div>
@@ -140,11 +232,8 @@
 							<div class="col-md-1"></div>
 							<div class="col-md-10">
 								<div class="row">
-									<div class="col-md-3">
-										<a href="add_listing.html" type="button" class="bg-white f-16 w-500  c-brown bd-brandb bd-4 text-center width-100p dis-inline-b" name="">Back</a>
-									</div>
 									<div class="col-md-3 mm-t-8">
-										<button type="submit" class="bg-brown f-16 w-500 no-bd c-white bd-4 text-center width-100p" name="">Next</button>
+										<button type="submit" class="bg-brown f-16 w-500 no-bd c-white bd-4 text-center width-100p" name="">Save</button>
 									</div>
 									<div class="col-md-6"></div>	
 								</div>

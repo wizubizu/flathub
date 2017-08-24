@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -47,7 +47,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse p-t-10">
 					<ul class="nav navbar-nav navbar-right f-1 bg-white">
-						<li><a href="our_apartment2.html">Our homes</a></li>
+						<li><a href="our_apartment2.html">Our apartment</a></li>
 						<li><a href="list_apartment.html" class="">List apartment</a></li>
 
 						<li class="dropdown">
@@ -67,22 +67,25 @@
 		<div class="navbar m-b-0">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4"></div>
-					<div class="col-md-4">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
 						<ul class="nav navbar-nav bg-white">
-							<li class="">
-								<a href="viewing_request.html">Viewing</a>
+							<li class="active c-brown">
+								<a href="user_profile_listing.html">Listings</a>
 							</li>
-							<li class="p-l-26 mp-l-0">
-								<a href="list_apartment.html">Apartments</a>
+							<li class="p-l-45 mp-l-0">
+								<a href="viewing_request.html">Viewing requests</a>
+							</li>
+							<li class="p-l-45 mp-l-0 ">
+								<a href="booking_request.html">Booking requests</a>
 							</li>
 
-							<li class="p-l-26 mp-l-0 active c-brown">
-								<a href="setting_page.html">Settings</a>
+							<li class="p-l-45 mp-l-0">
+								<a href="transaction.html">Transactions</a>
 							</li>
 						</ul>
 					</div>
-					<div class="col-md-4"></div>
+					<div class="col-md-2"></div>
 				</div>
 			</div>
 		</div>
@@ -90,98 +93,164 @@
 
 	<hr class="m-t-0">
 
+
 	<section>
+		<ol class="breadcrumb bg-trans">
+		  <li class="bgyco"><a href="#">Listins</a></li>
+		  <li class="active c-brown">Add a listing</li>
+		</ol>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
-					<div class="bd-brand">
-						<p class="p-l-10 p-18 h-50 "><a href="user_profile.html"> Dashboard</p></a>
-					</div>
-					<div class="bd-brand">
-						<p class="p-l-10 p-18 h-50 c-brown"><a href="viewing_page.html"> Rent Apartments</p></a>
-					</div>
-					<div class="bd-brand">
-						<p class="p-l-10 p-18 h-50 "><a href="user_profile_listing.html"> List Apartments</p></a>
-					</div>
-				</div>
-
-				<div class="col-md-8">
-					<div class="bd-brand">
-						<div class="container width-1000 m-l-36 mwidth-100 mm-l-0">
-							
-							<div class="row">
-								<div class="col-md-6">
-									<p class="f-24 w-900 m-t-20">Email notifications</p>
-								</div>
-								<div class="col-md-6">
-									<p class="c-brown m-t-20 m-l-18p mm-l-0"><a href="#">Edit</a></p>
-								</div>
-							</div>
-							<hr class="m-r-37p m-t-0 mm-r-0">
-							<div class="row">
-								<div class="col-md-3">
-									<p>I want to receive notifications of:</p>
-								</div>
-								<div class="col-md-9">
-									<div class="checkbox m-t-0">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 bd-brandf ">
+					<form action="#">
+						<div class="row">
+							<div class="col-md-1"></div>
+							<div class="col-md-10">
+								<h3 class="">What amenities does your place have?</h3>
+								<div class="row">
+									<div class="col-md-5">
+										<div class="">
+									<div class="checkbox m-t-20">
 										<input type="checkbox" id="check1">
 										<label for="check1">
-											<span class="p-l-10"> New apartment listings </span>
+											<span class="p-l-10"> Air conditioning</span>
 										</label>
 									</div>
 
 									<div class="checkbox m-t-20">
 										<input type="checkbox" id="check2">
 										<label for="check2">
-											<span class="p-l-10"> Price reductions </span>
+											<span class="p-l-10"> Cable TV</span>
 										</label>
 									</div>
 
 									<div class="checkbox m-t-20">
 										<input type="checkbox" id="check3">
 										<label for="check3">
-											<span class="p-l-10"> Move in and viewing reminders </span>
+											<span class="p-l-10"> Desk (Workspace)</span>
 										</label>
 									</div>
 
 									<div class="checkbox m-t-20">
 										<input type="checkbox" id="check4">
 										<label for="check4">
-											<span class="p-l-10">When my apartment has been listed </span>
+											<span class="p-l-10"> Dryer</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check5">
+										<label for="check5">
+											<span class="p-l-10"> Elevator</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check6">
+										<label for="check6">
+											<span class="p-l-10"> Furniture</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check7">
+										<label for="check7">
+											<span class="p-l-10"> Gym</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check8">
+										<label for="check8">
+											<span class="p-l-10"> Parking</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check9">
+										<label for="check9">
+											<span class="p-l-10"> Pool</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check10">
+										<label for="check10">
+											<span class="p-l-10"> Refrigerator</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check11">
+										<label for="check11">
+											<span class="p-l-10"> Stable power</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check12">
+										<label for="check12">
+											<span class="p-l-10"> TV</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check13">
+										<label for="check13">
+											<span class="p-l-10"> Washing machine</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check14">
+										<label for="check14">
+											<span class="p-l-10"> Wheelchair accessble</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										<input type="checkbox" id="check15">
+										<label for="check15">
+											<span class="p-l-10"> Wifi</span>
+										</label>
+									</div>
+
+									<div class="checkbox m-t-20">
+										
+										<input type="checkbox" id="check16">
+										<label for="check16">
+											<span class="p-l-10"> 24/7 security</span>
 										</label>
 									</div>
 								</div>
-							</div>
-							<br><br>
-
-							<div class="row">
-								<div class="col-md-6">
-									<p class="f-24 w-900 m-t-20">Card details</p>
+									</div>
+									<div class="col-md-7"></div>	
 								</div>
 							</div>
-							<hr class="m-r-37p m-t-0 mm-r-0">
-							<a href=""><p class="c-brown">Change card details</p></a>
-							<br><br>
-							<div class="row">
-								<div class="col-md-2"></div>
-								<div class="col-md-4">
-								<form class="form-inline m-t-64 mm-t-8 " action="apartment_details.php" method="post">
-
-									<button type="submit" class="width-263 h-48 bgc f-18 w-500 no-bd c-white bd-4 mm-l-0 mwidth-100 text-center" name="">Save</button>	
-								</form>
-								</div>
-								<div class="col-md-6"></div>
-								</div> 
-							<br><br>
+							<div class="col-md-1"></div>
 						</div>
-					</div>
-				</div>
 
+						<div class="row m-t-30 m-b-30">
+							<div class="col-md-1"></div>
+							<div class="col-md-10">
+								<div class="row">
+									<div class="col-md-3 mm-t-8">
+										<button type="submit" class="bg-brown f-16 w-500 no-bd c-white bd-4 text-center width-100p" name="">Save</button>
+									</div>
+									<div class="col-md-6"></div>	
+								</div>
+							</div>
+							<div class="col-md-1"></div>
+						</div>
+					</form>
+				</div>
 				<div class="col-md-1"></div>
 			</div>
 		</div>
 	</section>
 
+	
 	<footer class="nb-footer">
 		<div class="container">
 			<div class="row m-t-62">
@@ -238,21 +307,7 @@
 	<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="libraries/bootstrap/js/jquery.min.js"></script>
 	<script src="libraries/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="libraries/bootstrap/js/book_viewing.js"></script>
-	<script type="text/javascript" src="assets/js/registrationformvalidation.js"></script>
-	<script type="text/javascript" src="assets/js/listing.js"></script>
-	<script type="text/javascript" src="assets/js/custom.js"></script>
-	<!-- <script type="text/javascript">
-		$('ul.foot li a').on('click', function(e){
-			$(".nav.nav-pills").find('.active').removeClass('active');
-			$(".tab-content").find('.active').removeClass('active');
-			// console.log($(this).attr('href'));
-			var link = $(this).attr('href');
-			
-			
-			$(link).addClass('active');
-		})
-	</script> -->
+	<script type="text/javascript" src="assets/js/fqshowhide.js"></script>
 	
 
 </body>

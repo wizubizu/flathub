@@ -93,7 +93,6 @@
 
 	<hr class="m-t-0">
 
-
 	<section>
 		<ol class="breadcrumb bg-trans">
 		  <li class="bgyco"><a href="#">Listins</a></li>
@@ -103,34 +102,113 @@
 			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-10 bd-brandf ">
-					<form action="add_listing3.html">
+					<form action="add_listing8.html">
 						<div class="row">
 							<div class="col-md-1"></div>
 							<div class="col-md-10">
-								<h3 class="">Tell us about your place</h3>
+								<h3 class="">When can people come and view your apartment?</h3>
 								<div class="row">
-									<div class="col-md-5">
-										<div class="form-group">
-											<textarea name="" id="input" class="form-control bd-brandb c-brown" rows="3" placeholder="Tell guests about your place" required="required"></textarea>
+									<div class="col-md-10">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="m-b-0">Day</label>
+													<select name="" id="input" class="form-control bd-brandb c-brown" required="required">
+														<option value="">Monday</option>
+														<option value=""></option>
+														<option value=""></option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="form-group">
+													<label class="m-b-0">From</label>
+													<select name="" id="input" class="form-control bd-brandb c-brown" required="required">
+														<option value="">00:00</option>
+														<option value=""></option>
+														<option value=""></option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-1 pos-rel">
+												<p class="pos-abs mt-_14 t-28">to</p>
+											</div>
+											<div class="col-md-3">
+												<div class="form-group">
+													<label class="m-b-0">Till</label>
+													<select name="" id="input" class="form-control bd-brandb c-brown" required="required">
+														<option value="">00:00</option>
+														<option value=""></option>
+														<option value=""></option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-1 pos-rel">
+												<p class="c-brown pos-abs mt-_14 t-28">Remove</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-7"></div>	
-								</div>
-							</div>
-							<div class="col-md-1"></div>
-						</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="radio">
+												  	<label id="" style="cursor: pointer; "  onclick="myClicked()">
+													  	<center>
+													  		<i class="fa fa-plus c-brown " style=" ; margin-left: -25px;" ></i>	<span class="c-brown">Add another day</span>
+													  	</center>
+												  	</label>
+												</div>
+											</div>
+											<div class="col-md-6"></div>
+										</div>
 
-						<div class="row">
-							<div class="col-md-1"></div>
-							<div class="col-md-10">
-								<h3 class="">Name your place </h3>
-								<div class="row">
-									<div class="col-md-5">
-										<div class="form-group">
-											<input type="text" name="" placeholder="e.g 2 bedroom apartment in sabo yaba" class=" form-control" required="required">
+										<div class=" open" id="open" style="display: none; transition: all 1s ease-in; animation: ease; animation-delay: 2s;">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="m-b-0">Day</label>
+														<select name="" id="input" class="form-control bd-brandb c-brown" required="required">
+															<option value="">Monday</option>
+															<option value=""></option>
+															<option value=""></option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<label class="m-b-0">From</label>
+														<select name="" id="input" class="form-control bd-brandb c-brown" required="required">
+															<option value="">00:00</option>
+															<option value=""></option>
+															<option value=""></option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-1 pos-rel">
+													<p class="pos-abs mt-_14 t-28">to</p>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<label class="m-b-0">Till</label>
+														<select name="" id="input" class="form-control bd-brandb c-brown" required="required">
+															<option value="">00:00</option>
+															<option value=""></option>
+															<option value=""></option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-1 pos-rel">
+													<p class="c-brown pos-abs mt-_14 t-28">Remove</p>
+												</div>
+											</div>
+											<div class="">
+												<div class="radio">
+													<label id="" style="cursor: pointer; "  onclick="myRemove()">
+													  	<i class="fa fa-times " style="color:black ; margin-left: -20px;" ></i>
+													  </label>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="col-md-7"></div>	
+									<div class="col-md-2"></div>
 								</div>
 							</div>
 							<div class="col-md-1"></div>
@@ -140,11 +218,8 @@
 							<div class="col-md-1"></div>
 							<div class="col-md-10">
 								<div class="row">
-									<div class="col-md-3">
-										<a href="add_listing.html" type="button" class="bg-white f-16 w-500  c-brown bd-brandb bd-4 text-center width-100p dis-inline-b" name="">Back</a>
-									</div>
 									<div class="col-md-3 mm-t-8">
-										<button type="submit" class="bg-brown f-16 w-500 no-bd c-white bd-4 text-center width-100p" name="">Next</button>
+										<button type="submit" class="bg-brown f-16 w-500 no-bd c-white bd-4 text-center width-100p" name="">Save</button>
 									</div>
 									<div class="col-md-6"></div>	
 								</div>
@@ -158,7 +233,7 @@
 		</div>
 	</section>
 
-	
+
 	<footer class="nb-footer">
 		<div class="container">
 			<div class="row m-t-62">
@@ -216,6 +291,16 @@
 	<script type="text/javascript" src="libraries/bootstrap/js/jquery.min.js"></script>
 	<script src="libraries/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/fqshowhide.js"></script>
+
+	<script type="text/javascript">
+		function myClicked(){
+        	document.getElementById('open').style.display ="block";
+        }
+        function myRemove(){
+        	document.getElementById('open').style.display ="none";
+     
+        }
+	</script>
 	
 
 </body>

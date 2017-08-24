@@ -110,11 +110,15 @@ select:focus {
 .m-t-100{margin-top:100px !important;}
 .m-t-120{margin-top:120px !important;}
 .m-t-130{margin-top:130px !important;}
+.m-t-150{margin-top:150px !important;}
 .m-t-5p{margin-top:5% !important; }
 .m-t-7p{margin-top:7% !important; }
 .m-t-10p{margin-top:10% !important; }
 .m-t-12p{margin-top:12% !important; }
+.m-t-20p{margin-top:20% !important; }
 .m-t-21p{margin-top:21% !important; }
+.m-t-30p{margin-top:30% !important; }
+.m-t-80p{margin-top:80% !important; }
 
 /****  Margin Bottom  ****/
 .m-b-_40 {margin-bottom:-40px !important;}
@@ -280,6 +284,7 @@ select:focus {
 .t-5 { top:5px; }
 .t-10 { top:10px; }
 .t-15 { top:15px; }
+.t-28 { top:28px; }
 .t-10p{ top:10%;}
 .t-20p{ top:20%;}
 .t-50p{ top:50%;}
@@ -496,6 +501,8 @@ select:focus {
 .overflow-x-hidden { overflow-x:hidden !important; }
 .overflow-y-hidden { overflow-y:hidden !important; }
 
+.overflow-y-scroll { overflow-y:scroll !important; }
+
 .scale0-9 { transition:all 1s ease-in-out; -webkit-transition:all 1s ease-in-out; -moz-transition:all 1s ease-in-out; }
 .scale1-2 { transition:all 1s ease-in-out; -webkit-transition:all 1s ease-in-out; -moz-transition:all 1s ease-in-out; }
 
@@ -528,6 +535,8 @@ select:focus {
 .h-50vh{height:50vh !important; overflow:hidden !important}
 .h-60vh{height:60vh !important; overflow:hidden !important}
 .h-100vh{height:100vh !important; overflow:hidden !important}
+.max-h-500 { max-height:500px !important; }
+
 
 
 a:focus, a:hover {
